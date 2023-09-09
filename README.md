@@ -33,15 +33,16 @@ Acessar o VSCODE e abrir a pasta do projeto
 Criar um arquivo novo chamado site.html
 Comando git status exibe o status atual do projeto
 
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c9be39ff-6903-4a9d-b7f0-e2cf23d301ba) <br>
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c9be39ff-6903-4a9d-b7f0-e2cf23d301ba)  
 
 Os comandos:
- **git add <nome_arquivo>** 
+**git add <nome_arquivo>**
 ou 
-**git add .** 
+**git add .**
 Adiciona o arquivo na área de stage
 Se dermos outro git status podemos ver a alteração.
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/1df687c0-0607-4f79-ba80-54f23a75d12a) <br>
+
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/1df687c0-0607-4f79-ba80-54f23a75d12a)  
 
 Antes de fazer o commit precisamos configurar o git.
 O git precisa saber qual é o autor do documento. Isso é muito importante para diferenciar as alterações feitas por autores diferentes.
