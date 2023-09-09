@@ -36,7 +36,7 @@ Comando git status exibe o status atual do projeto
 ![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c9be39ff-6903-4a9d-b7f0-e2cf23d301ba)  
 
 Os comandos:  
-**git add <nome_arquivo>**  
+**git add "nome_arquivo"**  
 ou  
 **git add .**  
 Adiciona o arquivo na área de stage  
@@ -71,9 +71,9 @@ Para visualizar novamente dar o **git log**:
 ## Criando branch
 
 Pode se utilizar os comandos:  
-**git branch "<nome>"**  
+**git branch "nome_branch"**  
 ou  
-**git checkout -b "<nome>"** //esse comando além de criar, já faz o checkout para a nova branch  
+**git checkout -b "nome_branch"** //esse comando além de criar, já faz o checkout para a nova branch  
 
 
 ### Renomeando branch
@@ -92,7 +92,7 @@ Primeiro é necessário ir para a branch principal master ou main
 **git pull**  
 
 Depois faz o seguinte comando:  
-**git merge <nome_branch>**  
+**git merge nome_branch**  
 ![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/2e6aeb73-9a4d-4e73-9722-55e62982abd6)  
 
 Após isso, se vc der o comando git log, verá que a branch e o main estarão na mesma posição - no HEAD.  
@@ -126,15 +126,15 @@ Acesse os passos na página abaixo:
 
 ## Clonar projeto:  
 No terminal, acessar pasta desejada e digitat o comando:  
-**git clone <link SSH do projeto>**  
+**git clone link_SSH_projeto**  
 ou  
 use o alias para o git clone  
-**gcl  <link SSH do projeto>**  
+**gcl link_SSH_projeto**  
 
 
 ## Repositório Remoto
 Subindo alterações no GitHub  
-**git push origin <nome branch>**  
+**git push origin nome_branch**  
 
 ```
 IMPORTANTE:  
@@ -148,7 +148,7 @@ Ter esse hábito vai ajudar a evitar possíveis problemas/conflitos.
 ## Resolvendo Conflitos  
 Estando na sua branch, após digitar os comandos abaixo:  
 **git pull origin main**  
-**git merge <minhaBranch>** //branch que estou trabalhando  
+**git merge minhaBranch** //branch que estou trabalhando  
 Pode acontecer de você ser alertado sobre algum conflito.  
 Isso ocorre quando algum dev sobe para main alguma alteração em uma linha que você está trabalhando.  
 
