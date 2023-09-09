@@ -1,9 +1,9 @@
 # curso-git-github
 É um repositorio para estudar Git/GitHub
 
-Resumo sobre o estudo: <br>
+Resumo sobre o estudo:
 
-##Git
+## Git
 
 Git é um sistema de controle de versão utilizado para mudanças em arquivos e coordenar o trabalho entre várias pessoas em projetos de software.
 
@@ -12,7 +12,7 @@ Ele permite que você mantenha um histórico de todas as alterações feitas em 
 Git funciona localmente em seu computador e não requer uma conexão contínua com a internet. Isso torna mais fácil para os desenvolvedores trabalharem offline e sincronizarem suas alterações posteriormente.<br><br>
 
 
-##GitHub<br>
+## GitHub
 
 GitHub é uma plataforma baseada na web que hospeda repositórios Git e fornece uma série de recursos adicionais para colaboração em equipe e gerenciamento de projetos de software.
 
@@ -23,22 +23,26 @@ O GitHub também fornece ferramentas para rastrear problemas (issues), fazer sol
 Em resumo, Git é o sistema de controle de versão que controla as mudanças em seu código, enquanto GitHub é uma plataforma online que facilita o compartilhamento, colaboração e gerenciamento de projetos de software usando o Git como base. Ambos desempenham papéis fundamentais no desenvolvimento de software colaborativo e no controle de versão.<br><br>
 
 
-##Passo a passo
+## Passo a passo
 
 Instalar o Git no seu PC
-Confirmar instalacão: git --versionCriar uma pasta que será o nosso projeto. Ex: "MeuSite"Acessar a pasta e fazer o comando: git init
+Confirmar instalacão: **git --version**
+Criar uma pasta que será o nosso projeto. Ex: "MeuSite"
+Acessar a pasta e fazer o comando: **git init**
 Acessar o VSCODE e abrir a pasta do projeto
 Criar um arquivo novo chamado site.html
 Comando git status exibe o status atual do projeto
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c9be39ff-6903-4a9d-b7f0-e2cf23d301ba)
 
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c9be39ff-6903-4a9d-b7f0-e2cf23d301ba) <br>
 
-O comando git add <nome arquivo> ou git add . 
+Os comandos:
+ **git add <nome_arquivo>** 
+ou 
+**git add .** 
 Adiciona o arquivo na área de stage
 Se dermos outro git status podemos ver a alteração.
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/1df687c0-0607-4f79-ba80-54f23a75d12a)
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/1df687c0-0607-4f79-ba80-54f23a75d12a) <br>
 
- 
 Antes de fazer o commit precisamos configurar o git.
 O git precisa saber qual é o autor do documento. Isso é muito importante para diferenciar as alterações feitas por autores diferentes.
 Para fazer isso deve-se informar os dados de user e e-mail
