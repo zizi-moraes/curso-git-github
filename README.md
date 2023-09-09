@@ -1,7 +1,7 @@
 # curso-git-github
 É um repositorio para estudar Git/GitHub
 
-Resumo sobre o estudo:
+Resumo sobre o estudo com base no vídeo do **Victor Lima** [Curso de Git e GitHub](https://www.youtube.com/watch?v=192HgwRgOYE)
 
 ## Git
 
@@ -93,70 +93,76 @@ Primeiro é necessário ir para a branch principal master ou main
 
 Depois faz o seguinte comando:  
 **git merge <nome_branch>**  
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/2e6aeb73-9a4d-4e73-9722-55e62982abd6)  
+
 Após isso, se vc der o comando git log, verá que a branch e o main estarão na mesma posição - no HEAD.  
 
 
 ## GITHUB
 
 Crie um repositório e escolha:  
--  privado ou público,  
+- privado ou público,  
 - se terá readme  
 
-Após esse passo, você terá que escolher qual dos 2 
-
- 
-
-Como o projeto já existe localmente, vamos usar o segundo exemplo.
-Primeiro, no projeto copiar e colar o comando 
-git remote....
-
-Se o projeto já estiver como main, pode se pular este segundo e ir para o próximo passo:
-git push -u origin main
-
-------------------------------------------------------------------------------------------------------
-Caso ocorra o erro abaixo, será necessário configurar o fingerprint:
-
-Acesse os passos na página abaixo:1) https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-2) https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-------------------------------------------------------------------------------------------------------
-
-Clonar projeto:
-No terminal, acessar pasta desejada e digitat o comando:
-git clone <link SSH do projeto>
-
-ou use o alias para o git clone
-gcl  <link SSH do projeto>
+Após esse passo, você terá que escolher qual dos 2
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/985592dd-bd2e-47ba-93c7-050b129594f5)  
 
 
-Repositório Remoto
-Subindo alterações no GitHub
-git push origin <nome branch> 
+Como o projeto já existe localmente, vamos usar o segundo exemplo.  
+Primeiro, no projeto copiar e colar o comando   
+**git remote...**  
 
-IMPORTANTE:
-Sempre que foi iniciar algum trabalho, dar um:
-git pull origin <branch>
-
-Isso vai puxar as alterações recentes, feitas por outros devs e enviadas para a main (por ex).
-Ter esse hábito vai ajudar a evitar possíveis problemas/conflitos.
+Se o projeto já estiver como main, pode se pular este segundo e ir para o próximo passo:  
+**git push -u origin main**  
 
 
-Resolvendo Conflitos
-Estando na sua branch, após digitar os comandos abaixo:
-git pull origin main
-git merge <minhaBranch> //branch que estou trabalhando
-Pode acontecer de você ser alertado sobre algum conflito.
-Isso ocorre quando algum dev sobe para main alguma alteração em uma linha que você está trabalhando.
-
-Para resolver você pode seguir a opções que aparecem no vscode (accept current change... e etc), ou apagar informação indesejada e realizar os comandos:
-git add .git commit -m "resolvendo conflitos"git push origin main //sobe para a main
+---
+> Caso ocorra o erro abaixo, será necessário configurar o fingerprint:
+Acesse os passos na página abaixo:  
+1) https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent  
+2) https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account  
+***
 
 
-Rebase
+## Clonar projeto:  
+No terminal, acessar pasta desejada e digitat o comando:  
+**git clone <link SSH do projeto>**  
+ou  
+use o alias para o git clone  
+**gcl  <link SSH do projeto>**  
+
+
+## Repositório Remoto
+Subindo alterações no GitHub  
+**git push origin <nome branch>**  
+
+```
+IMPORTANTE:  
+Sempre que foi iniciar algum trabalho, dar um:  
+**git pull origin <branch>**
+
+Isso vai puxar as alterações recentes, feitas por outros devs e enviadas para a main (por ex).  
+Ter esse hábito vai ajudar a evitar possíveis problemas/conflitos.  
+```
+
+## Resolvendo Conflitos  
+Estando na sua branch, após digitar os comandos abaixo:  
+**git pull origin main**  
+**git merge <minhaBranch>** //branch que estou trabalhando  
+Pode acontecer de você ser alertado sobre algum conflito.  
+Isso ocorre quando algum dev sobe para main alguma alteração em uma linha que você está trabalhando.  
+
+Para resolver você pode seguir a opções que aparecem no vscode (accept current change... e etc), ou apagar informação indesejada e realizar os comandos:  
+**git add .**  
+**git commit -m "resolvendo conflitos"**  
+**git push origin main** //sobe para a main
+
+
+## Rebase
 
 
 
-
-Pull/Merge Request
+## Pull/Merge Request
 
 
 
