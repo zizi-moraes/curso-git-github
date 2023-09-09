@@ -25,85 +25,82 @@ Em resumo, Git é o sistema de controle de versão que controla as mudanças em 
 
 ## Passo a passo
 
-Instalar o Git no seu PC
-Confirmar instalacão: **git --version**
-Criar uma pasta que será o nosso projeto. Ex: "MeuSite"
-Acessar a pasta e fazer o comando: **git init**
-Acessar o VSCODE e abrir a pasta do projeto
-Criar um arquivo novo chamado site.html
-Comando git status exibe o status atual do projeto
+Instalar o Git no seu PC  
+Confirmar instalacão: **git --version**  
+Criar uma pasta que será o nosso projeto. Ex: "MeuSite"  
+Acessar a pasta e fazer o comando: **git init**  
+Acessar o VSCODE e abrir a pasta do projeto  
+Criar um arquivo novo chamado site.html  
+Comando git status exibe o status atual do projeto  
 
 ![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c9be39ff-6903-4a9d-b7f0-e2cf23d301ba)  
 
-Os comandos:
-**git add <nome_arquivo>**
-ou 
-**git add .**
-Adiciona o arquivo na área de stage
-Se dermos outro git status podemos ver a alteração.
+Os comandos:  
+**git add <nome_arquivo>**  
+ou  
+**git add .**  
+Adiciona o arquivo na área de stage  
+Se dermos outro git status podemos ver a alteração.  
 
 ![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/1df687c0-0607-4f79-ba80-54f23a75d12a)  
 
-Antes de fazer o commit precisamos configurar o git.
-O git precisa saber qual é o autor do documento. Isso é muito importante para diferenciar as alterações feitas por autores diferentes.
-Para fazer isso deve-se informar os dados de user e e-mail
-git config --global user.name "user"
-git config --global user.email "email@gmail.com" 
+Antes de fazer o commit precisamos configurar o git.  
+O git precisa saber qual é o autor do documento. Isso é muito importante para diferenciar as alterações feitas por autores diferentes.  
+Para fazer isso deve-se informar os dados de user e e-mail  
+**git config --global user.name "user"**  
+**git config --global user.email "email@gmail.com"**   
 
-O comando <b>git log<b> exibe os últimos commits realizados e exibe o mais recente que o texto HEAD
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/430dd101-9a04-4f05-ada8-7748b4214dc5)
- 
+O comando **git log** exibe os últimos commits realizados e exibe o mais recente que o texto HEAD  
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/430dd101-9a04-4f05-ada8-7748b4214dc5)  
 
-Se eu quiser desfazer um commit e volta no tempo posso pegar os 6 primeiro digitos de uma chave e fazer o seguinte comando:
-git checkout a09826
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/5d4e8db1-fe4a-4d3b-870a-bc0e0810e04d)
+Se eu quiser desfazer um commit e volta no tempo posso pegar os 6 primeiro digitos de uma chave e fazer o seguinte comando:  
+**git checkout a09826**  
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/5d4e8db1-fe4a-4d3b-870a-bc0e0810e04d)  
 
-com o <b>git log<b> podemos ver qual commit está no head:
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c5aa6c26-cf10-4004-b2eb-7752d852f4ba)
+com o **git log** podemos ver qual commit está no head:  
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/c5aa6c26-cf10-4004-b2eb-7752d852f4ba)  
 
- 
+Para exibir os commits novamente basta dar o comando  
+**git checkout master**  
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/e45b0f7f-f0c7-4a9a-99d1-c100cee026d9)  
 
-Para exibir os commits novamente basta dar o comando
-<b>git checkout master</b>  
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/e45b0f7f-f0c7-4a9a-99d1-c100cee026d9)
-
-
-Para visualizar novamente dar o 
-git log
-![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/0fef32cf-f847-4b44-b7a9-3cf913dfea13)
+Para visualizar novamente dar o **git log**:  
+![image](https://github.com/zizi-moraes/curso-git-github/assets/136759769/0fef32cf-f847-4b44-b7a9-3cf913dfea13)  
 
 
+## Criando branch
 
-##Criando branch
+Pode se utilizar os comandos:  
+**git branch "<nome>"**  
+ou  
+**git checkout -b "<nome>"** //esse comando além de criar, já faz o checkout para a nova branch  
 
-Pode se utilizar os comandos: 
-git branch "<nome>"
-ou 
-git checkout -b "<nome>" //esse comando além de criar, já faz o checkout para a nova branch
 
-Renomeando branchImagina que vc quer renomear a branch master
-Estando com essa branch já selecionada, digite o comando:
-git branch -m main
+### Renomeando branch
+
+Imagina que vc quer renomear a branch master  
+Estando com essa branch já selecionada, digite o comando:  
+**git branch -m main**  
 
 Só faça isso em repositórios novos!!!!!
 
 
-##Realizando o Merge
+## Realizando o Merge  
 
-Primeiro é necessário ir para a branch principal master ou main
-git checkout main
-git pull
+Primeiro é necessário ir para a branch principal master ou main  
+**git checkout main**  
+**git pull**  
 
-Depois faz o seguinte comando:
-git merge <nome-da-branch> 
-Após isso, se vc der o comando git log, verá que a branch e o main estarão na mesma posição - no HEAD.
+Depois faz o seguinte comando:  
+**git merge <nome_branch>**  
+Após isso, se vc der o comando git log, verá que a branch e o main estarão na mesma posição - no HEAD.  
 
 
-GITHUB
+## GITHUB
 
-Crie um repositório e escolha:
--  privado ou público, 
-- se terá readme
+Crie um repositório e escolha:  
+-  privado ou público,  
+- se terá readme  
 
 Após esse passo, você terá que escolher qual dos 2 
 
