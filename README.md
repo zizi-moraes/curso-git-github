@@ -158,18 +158,66 @@ Para resolver você pode seguir a opções que aparecem no vscode (accept curre
 **git push origin main** //sobe para a main
 
 
-## Rebase
+## Rebase vs Merge   
+### Merge:   
+Cria um novo commit de mesclagem.  
+Preserva o histórico original de cada branch.  
+Resulta em um histórico de commits não linear.  
+Bom para preservar o histórico detalhado de desenvolvimento de cada branch.  
+
+### Rebase:   
+Move commits para o topo de outra branch.  
+Torna o histórico mais linear.  
+Resulta em um histórico mais limpo, mas reescreve o histórico original.  
+Útil para manter um histórico mais limpo e linear.  
+
+#### Passos para fazer o Rebase:
+1. Acesse a branch main e puxe as últimas alterações  
+**git checkout main**  
+**git pull** 
+2. Volte para a branch em que você está trabalhado (branch feature) e digite o comando:  
+**git rebase main**  
+3. Caso exista algum conflito, o vscode irá indicar. Após corrigir o conflito, digitar o comando:  
+**git rebase --continue**  
+4. Repetir o passo 3 até que não exista mais conflito.  
+
+### Escolha:   
+Use o merge para preservar históricos detalhados e visíveis.  
+Use o rebase para manter um histórico mais limpo e linear, especialmente em branches de recursos.  
+A escolha entre merge e rebase depende das necessidades do projeto e das preferências da equipe. Mantenha a estratégia consistente em seu projeto.  
 
 
+## Pull/Merge Request  
+Um **pull request** (PR), também conhecido como **merge request** em algumas plataformas, é uma solicitação feita por um colaborador de um repositório Git para incorporar suas alterações em uma branch (normalmente uma branch de recurso) na branch principal (geralmente `main` ou `master`). Aqui está um resumo:  
 
-## Pull/Merge Request
+1. **Abertura de um Pull Request**:  
+   - Um desenvolvedor faz um fork de um repositório ou clona um repositório existente.  
+   - Eles criam uma nova branch para trabalhar em uma funcionalidade ou correção específica.  
+   - Após concluir o trabalho na nova branch, eles abrem um pull request no repositório original para solicitar a mesclagem das alterações.  
 
+2. **Revisão de Código**:  
+   - Outros membros da equipe revisam o código e fornecem feedback por meio de comentários.  
+   - As discussões podem ocorrer para esclarecer dúvidas e fazer melhorias no código.  
+   - A revisão de código ajuda a manter a qualidade do código e a evitar problemas.  
 
+3. **Testes Automatizados**:  
+   - Muitas vezes, sistemas de integração contínua (CI) executam testes automatizados nas alterações propostas.  
+   - Isso ajuda a garantir que as alterações não introduzam problemas no código existente.  
 
+4. **Mesclagem**:  
+   - Após revisões, discussões e aprovações, o mantenedor do repositório original pode mesclar as alterações na branch principal.  
+   - As alterações são agora parte do código principal e estão disponíveis para todos.  
 
+5. **Encerramento do Pull Request**:  
+   - O pull request é fechado após a mesclagem bem-sucedida das alterações.  
+   - Qualquer problema relacionado à funcionalidade ou correção é acompanhado por meio de issues (problemas) associadas.  
 
+6. **Histórico de Mudanças Transparente**:  
+   - O pull request fornece um histórico transparente das alterações propostas, revisões e comentários relacionados.  
 
+7. **Colaboração e Contribuições Abertas**:  
+   - O pull request permite uma colaboração eficaz em projetos de código aberto e equipes de desenvolvimento distribuídas.  
+   - Facilita a contribuição de desenvolvedores externos aos projetos.  
 
-
-
+O pull request é uma prática comum no desenvolvimento colaborativo de software e é amplamente usado em plataformas de hospedagem de código, como o GitHub e o GitLab. Ele é essencial para manter o controle de alterações, facilitar a revisão do código e garantir a qualidade do software em desenvolvimento.  
 
